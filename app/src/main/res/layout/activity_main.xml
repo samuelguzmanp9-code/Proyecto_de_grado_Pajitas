@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="¡Bienvenido!"
+        android:text="¡Empieza a soñar!"
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -31,20 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_sleep_logo" />
 
-    <Button
-        android:id="@+id/btn_legacy_enter"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="244dp"
-        android:backgroundTint="@color/sleep_blue"
-        android:text="¡Empezar a soñar!"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_enter"
@@ -52,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="8dp"
         android:text="Conocimiento y Herramientas"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_go_tracker"
@@ -61,27 +47,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_go_references"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="@color/calm_lilac"
-        android:text="Ver Referencias Bibliográficas"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_go_tracker"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btn_go_tracker"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="@color/calm_lilac"
         android:text="Abrir Diario de Sueño"
         android:textSize="18sp"
@@ -89,5 +60,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_go_references"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Ver Referencias Bibliográficas"
+        android:src="@drawable/ic_book"
+        app:backgroundTint="@color/sleep_blue"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

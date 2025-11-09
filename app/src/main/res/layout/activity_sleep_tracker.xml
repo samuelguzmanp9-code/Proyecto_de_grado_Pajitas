@@ -30,55 +30,55 @@
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:text="¿A qué hora te acostaste anoche?"
                 android:textColor="@color/calm_lilac"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <Button
+                android:id="@+id/btn_select_bedtime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:hintEnabled="false">
+                android:text="Seleccionar Hora de Acostarse"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:backgroundTint="@color/sleep_blue"
+                android:layout_marginBottom="20dp" />
 
-                <EditText
-                    android:id="@+id/et_bedtime"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Ej. 11:30 PM"
-                    android:inputType="time"
-                    android:background="@color/white"      android:textColor="@color/black"           android:padding="15dp"
-                    tools:ignore="Autofill" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/et_bedtime"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:text="¿A qué hora te levantaste hoy?"
                 android:textColor="@color/calm_lilac"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <Button
+                android:id="@+id/btn_select_wakeup_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:hintEnabled="false">
+                android:text="Seleccionar Hora de Levantarse"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:backgroundTint="@color/sleep_blue"
+                android:layout_marginBottom="20dp" />
 
-                <EditText
-                    android:id="@+id/et_wakeup_time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Ej. 11:30 PM"
-                    android:inputType="time"
-                    android:background="@color/white"      android:textColor="@color/black"           android:padding="15dp"
-                    tools:ignore="Autofill" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/et_wakeup_time"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
